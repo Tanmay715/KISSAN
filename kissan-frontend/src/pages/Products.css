@@ -1,0 +1,132 @@
+.products-header {
+  margin-bottom: 2rem;
+}
+
+.products-filters {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.products-search-wrap {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.products-search-icon {
+  position: absolute;
+  left: 1.125rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.products-search {
+  width: 100%;
+  padding: 1rem 1.25rem 1rem 3rem;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 1.05rem;
+  background: var(--gray-100);
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.products-search:focus {
+  outline: none;
+  border-color: var(--green-500);
+  background: var(--white);
+  box-shadow: 0 0 0 4px rgba(82, 183, 136, 0.15);
+}
+
+.products-search::placeholder {
+  color: var(--gray-500);
+}
+
+.products-filter-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray-500);
+  margin-bottom: 0.75rem;
+}
+
+.products-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.products-category-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.625rem 1.125rem;
+  border: 2px solid var(--gray-200);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--gray-700);
+  font-size: 0.925rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.products-category-btn:hover {
+  border-color: var(--green-500);
+  color: var(--green-800);
+  background: var(--green-50);
+}
+
+.products-category-btn.active {
+  border-color: var(--green-700);
+  background: var(--green-700);
+  color: var(--white);
+}
+
+.products-category-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.products-results-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  color: var(--gray-500);
+  font-size: 0.9rem;
+}
+
+.products-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .products-filters {
+    padding: 1.25rem;
+  }
+
+  .products-search {
+    font-size: 1rem;
+    padding: 0.875rem 1rem 0.875rem 2.75rem;
+  }
+
+  .products-categories {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .products-category-btn {
+    flex-shrink: 0;
+  }
+}

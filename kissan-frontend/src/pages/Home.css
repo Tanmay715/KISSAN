@@ -1,0 +1,135 @@
+.hero {
+  background: linear-gradient(135deg, var(--green-800) 0%, var(--green-600) 100%);
+  color: var(--white);
+  padding: 4rem 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-actions .btn-secondary {
+  border-color: var(--white);
+  color: var(--white);
+  background: transparent;
+}
+
+.hero-actions .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-visual {
+  font-size: 5rem;
+  opacity: 0.9;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--green-900);
+  margin-bottom: 1.5rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.section-header .section-title {
+  margin-bottom: 0;
+}
+
+.see-all {
+  color: var(--green-700);
+  font-weight: 600;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.category-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  font-weight: 600;
+  color: var(--green-800);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+}
+
+.category-icon {
+  font-size: 2rem;
+}
+
+.cta-section {
+  background: var(--green-50);
+  padding: 4rem 0;
+  margin-top: 2rem;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.cta-inner h2 {
+  font-size: 2rem;
+  color: var(--green-900);
+  margin-bottom: 0.75rem;
+}
+
+.cta-inner p {
+  color: var(--gray-500);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-visual {
+    font-size: 3rem;
+  }
+}
